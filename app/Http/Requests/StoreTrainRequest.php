@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Foundation\Http\FormRequest;
-use app\Enums\TrainClass;
+use App\Enums\TrainClass;
 use Illuminate\Validation\Rule;
 
 class StoreTrainRequest extends FormRequest

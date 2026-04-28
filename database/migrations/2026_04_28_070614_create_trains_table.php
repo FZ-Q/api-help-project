@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use app\Enums\TrainClass;
+use App\Enums\TrainClass;
 
 return new class extends Migration
 {
@@ -14,7 +14,7 @@ return new class extends Migration
     {
         Schema::create('trains', function (Blueprint $table) {
             $table->id();
-            $table->stirng('name');
+            $table->string('name');
             $table->enum('class', array_column(TrainClass::cases(), 'value'))->default(TrainClass::ECONOMY->value);
             $table->timestamps();
         });
